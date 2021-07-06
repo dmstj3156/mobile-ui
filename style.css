@@ -1,0 +1,83 @@
+/*style.css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: "나눔고딕",'맑은고딕','sans-serif';
+}
+ul{
+    list-style-type: none;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    
+}
+header {
+    text-align: center;
+    background-color: darkorange;
+    color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    width: 100%;
+    overflow: hidden;
+}
+header > nav > ul > li{
+   float: left;
+   width: 33.33%;
+   background-color: rgb(252, 164, 0)
+}
+/*기본*/
+header > nav > ul > li >a{
+    color: rgba(255,255,255,0.7);
+    display: block;
+    padding: 5px;
+    font-weight: bold;
+}
+/*현재 메뉴(페이지)*/
+ nav > ul > li:active > a {
+    color: white;
+    border-bottom: 2px solid white;
+}
+header > h1{
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+#pet{
+    padding: 10px;
+    text-align: center;
+    
+}
+ #pet > h1{
+     font-size: 20px;
+     margin-bottom: 15px;
+     text-transform: uppercase;
+ }
+ .pet-list{
+    overflow: hidden;
+ }
+ .pet-list > li{
+     width: 50%;
+    float: left;
+    position: relative;
+    padding: 0 5px;
+    margin-bottom: 10px;
+ }
+ 
+ .pet-list > li > a > img{
+     width: 100%;
+     display: block;
+
+ }
+ .pet-list > li > a > .caption{
+     background-color: rgba(0,0,0,0.7);
+     position: absolute;
+     width: calc(100% - 10px); /*padding 크기 제거*/
+     padding: 1em;
+     left: 5px;
+     bottom: 0;
+     color: white;
+ }
